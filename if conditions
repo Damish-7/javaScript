@@ -1,0 +1,115 @@
+<body>
+<h1> javascript if condition<h1>
+<p>Display "good day" if the hour is leass than 18:00:</p>
+<p id="demo">Good Evening </P>
+
+<script>
+if (new date().getHours() <18){
+ document.getElementById("demo").innerHTML ="good day!";
+}
+</script>
+</body>
+
+
+<script>
+let age=18;
+let text="you can not drive!";
+
+if(age>=18){
+ text="you can drive!";
+}
+
+document.getElementById("demo").innerHTML =text;
+</script>
+
+
+<script>
+let age=16;
+letcountry="USA";
+let text="You can not drive!";
+
+if(country == "USA" && age>=16){
+  text="you can drive!';
+}
+</script>
+
+
+<script>
+let text;
+if (Math.random() <0.5){
+  text="<a href='https://w3schools.com'>Visit W3schools</a>";
+} else {
+  text+"<a href='https://wwf.org'>Visit WWF </a>";
+}
+document.getElementById("demo").innerHTML=text;
+</script>
+
+
+
+<body>
+<h2>javascript Ternary Operator</h2>
+<p id="demo"></p>
+
+<script>
+let age=16
+let text=(age<18)? "minor" : "adult";
+
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+
+
+
+<body>
+<h1>Javascript switch statement</h2>
+<p id="demo"></p>
+
+<script>
+let day;
+let date =newDate().getDay();
+
+switch (date){
+  case 0:
+   day="sunday";
+   break;
+  case 1:
+    day="monday";
+   break;
+  case 2:
+    day="tuesday";
+    break;
+  case3 :
+    day="wednesday";
+    break;
+  case 4:
+     day="thursday";
+     break;
+   case 5:
+     day="friday";
+     break;
+    case 6;
+      day="saturday";
+      break;
+    default:
+     text+"looking forward for the weekend";
+   }
+document.getElementById("demo").innerHTML ="today is"+day;
+</script>
+</body>
+
+
+
+<h1>javascript boolean</h1>
+<h2>Use case:while loop</h2>
+<p id="demo"></p>
+
+<script>
+let text= "";
+let i=1;
+
+while(i<10){
+ text +=i;
+ i++;
+}
+document.getElementById("demo").innerHTML =text;
+</script>
