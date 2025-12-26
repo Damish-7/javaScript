@@ -1,0 +1,119 @@
+/----------looooooops-----------/
+
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+<h2>Loops></h2>
+<p id="demo"></p>
+
+<script>
+const cars=["BMW","AUDI","BENZ","TESLA","MG","FORD"];
+
+let text="";
+for(let i=0;i<cars.length;i++){
+ text += cars[i]+ "<br>";
+}
+
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>
+
+
+//////for loop //////////////////////////////////////////////////////////
+                                                               
+for(expr1 ; expr2 ; expr3){                                    
+  }                                                            
+                                                               
+exp1- is executed one time before the execution of code block  
+exp2- defines the condition for executing the code block       
+exp3- is executed everytime the code block has been executed   
+                                                               
+///////////////////////////////////////////////////////////////////////
+
+<script>
+let text= "";
+
+for(let i=0; i<5; i++){
+  text +="the number is "+ i +"<br";
+}
+document.getElementById("demo").innerHTML=text;
+</script>
+
+
+
+////// for loop /////
+
+<script>
+const cars =["bmw","ford","volvo","audi"];
+let len=cars.length;
+
+let text="";
+for(let i=0; i<len; i++){
+  text +=cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML =text;
+</script>
+
+
+<script>
+const cars=["bmw","audi","volvo","tesla"];
+let len=cars.length;
+
+let i=2;
+
+let text="";
+for(;i<len;i++){
+  text += cars[i] +"<br";
+}
+document.getElementById("demo").innerHTML =text;
+</script>
+
+/////////// while loop ////////
+1.-while loop 
+2.-do while loop
+
+1-while loop 
+
+<script>
+let text="";
+
+let i=0;
+while(i<10){
+ text += "the number is " + i + "<br>";
+ i++;
+}
+
+
+2.-do while loop
+
+<script>
+let text="";
+
+Let i=0;
+
+do{
+  text +="<br> the number is" +i;
+  i++;
+}
+while(i<10);
+
+document.getElementById("demo").innerHTML =text;
+</script>
+
+
+//break///
+
+<script>
+let text="";
+
+loop1: for (let j=1; j<5; j++){
+    loop2: for (let i=1; i<5; i++){
+      if (i==3) { break loop1;}
+      text += i+ "<br>";
+   }
+}
+document.getElementById("demo").innerHTML=text;
+</script>
