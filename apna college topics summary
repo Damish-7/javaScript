@@ -1,0 +1,112 @@
+Chapter-1
+
+variables in JS
+-----------------
+ variables are containers for data
+ data can be changed	
+ Dynamically typed (can be changed the value any time)
+  
+a=b 
+= assignment operator
+
+variable rules----
+1.variable names are case sentitive "a" "A" is different
+2. only letters,digits,underscore,and $ is allowed (not even spaces)
+3. only a letter,underscore ,$ should be 1st character
+4. reserved words cannot be variable names
+
+let,const,var-----
+
+var: variables can be redeclared. A global scope variable 
+
+let: variables cannot be redeclared but can be updated. A block scope variable
+
+const: variable cannot be redeclared or updated. A block{} scope variable
+
+------------------------------------------------------------------
+Data Types in JS
+
+Primitive datatypes----
+Number, String, Boolean, Undefined, Null, BigInt, Symbol
+
+non primitives----
+objects(arrays,functions)
+
+objects-collection of values
+students(name,age,marks,isPass)
+key:value
+obj.key
+obj["key"]
+
+let -> can change
+const -> cannot change
+const obj -> key (can change)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Chapter-2
+
+Operators & Conditional Statements
+--------------------------------------
+
+comments in js
+--part of code which is not executed
+
+// single line comment
+/* multi line comment */
+
+
+operators in JS
+---------------
+used to perform some operation on data
+
+1.Arithmetic operators
++,-,*,/
+
+2.Modulus operator
+%  -remainder
+
+3.Exponentiation
+**  power 
+
+4.increment(unary operator)
+++   a=a+1    ,,,,  a++  (post) , ++a  (pre)
+
+5.decrement(unary)
+--   a=a-1
+
+6.Assignment operators
+= += -= *= %= **=
+
+= assign
++= a=a+1  
+
+7.Comparison operators
+>,<,<=,>=
+
+== equal to
+!= not equal
+=== equal to &type  (strict version)
+!== not equal to & type
+
+8.Logical operator
+&&- and       true true =true
+||- or        false false= false
+! - not       true->false  ,, false->true
+
+
+
+conditional statements
+------------------------
+
+if statement
+
+if else
+
+else if
+
+
+Ternary operators
+-------------------
+
+condition ? true output : false output
+
