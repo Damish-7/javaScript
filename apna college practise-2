@@ -1,0 +1,148 @@
+//calsculate sum 1 to 5
+
+let sum = 0;
+
+for(let i=1; i<=5; i++){
+    sum= sum+i;
+}
+console.log("sum", sum);
+
+//calsculate sum 1 to n
+
+let sum = 0;
+let n=100;
+
+for(let i=1; i<=n; i++){
+    sum= sum + i;
+}
+console.log("sum", sum); 
+
+
+let i=1;
+do{
+    console.log("i",i);
+    i++;
+}while(i<=10); 
+
+//for-of loop
+
+let str="apna college";
+
+for(let i of str){
+    console.log("i", i);
+}  
+
+
+// for in loop
+
+let student ={
+    name:"anil",
+    age: 20,
+    cgpa:7.5,
+    isPass: true,
+}
+
+for(let i in student){
+    console.log(i);
+}  
+
+
+// print all even numbers from0 to 100
+
+for(let num=0; num<=100; num++){
+    if(num%2 !== 0){
+        console.log("num=", num)
+    }
+}  
+
+// create a game start with random number ,ask user to keep guessing number until enters correct value
+
+let gameNum =25;
+
+let userNum = prompt("guess the game number : ");
+
+while(userNum !== gameNum){
+   userNum = prompt("you entered the wrong number, guess again :");
+   
+}
+
+console.log("congratulations, you entered the right number"); 
+
+let str="Apna college";
+let str1= str.toUpperCase();
+console.log(str1);  
+
+//practise 
+
+let fullName = prompt("enter fullName without spaces");
+
+let username = "@" + fullName + fullName.length;
+console.log(username); 
+
+
+let marks = [91, 93, 95, 96 ,45];
+console.log(marks);
+console.log(marks.length); 
+
+let heros = ["ironman", "thor", "hulk", "capA"];
+
+//for loop
+for(let i=0; i<=heros.length; i++){
+   console.log(heros[i]);
+}
+
+//for of
+for(let hero of heros){
+    console.log(hero);
+} 
+
+let cities = ["delhi","mumbai", "dubai", "hyd", "blr"];
+
+for(let city of cities){
+    console.log(city.toUpperCase());
+} 
+
+
+let marks = [87, 98, 85, 65, 46, 91];
+
+let sum=0;
+
+for(let val of marks){
+    sum += val;
+}
+
+let avg=sum / marks.length;
+console.log(`avg marks of class= ${avg}`);  
+
+let items = [250, 475, 890, 67, 799];
+
+let i=0;
+for(let val of items){
+    let offer =val/10;
+    items[i] = items[i]- offer;
+    console.log(`value after offer ${items[i]}`);
+    i++;
+}
+
+let price = [299, 450, 55, 890, 649];
+
+let i=0;
+for(let val of price){
+    let offer = val/10;
+    price[i] = price[i]-offer;
+    console.log(`value after offer ${price[i]}`);
+    i++;
+} 
+
+let  foodItems = ["potato", "apple", "litchi", "mango"];
+let heros = ["hulk", "cA", "batman"];
+
+let mix = foodItems.concat(heros);
+console.log(mix); 
+
+
+let companies = ["Bloomberg", "microsoft", "Uber", "Google", "IBM", "Netflix" ];
+
+companies.splice(2, 1, "Ola");
+
+*/
