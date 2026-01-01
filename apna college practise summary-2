@@ -1,0 +1,104 @@
+chapter-3
+
+
+Loops & Strings
+----------------
+
+loops in JS
+
+-Loops are used to execute piece of code again & again 
+
+1. for loop
+
+initialization ; stopping condition ; updation
+
+
+infinite loop: a loop  that never ends //never ever do this
+               stopping condition is not false
+
+2.while loop
+
+while(condition){          initialization
+  //                       condition
+}
+
+
+
+3. d0-while loop
+
+do{
+//
+}while (condition);
+
+
+4. for-of loop
+
+for(let val of strVar){
+  //
+}
+
+
+5. for-in loop
+
+for(let key in objVar){
+  //
+}
+
+
+//Strings in JS
+--Strings is a sequence of characters used to represent text
+
+
+// Template literals in JS
+-- A way to have embedded exxpressions in strings
+  `this is a template literals`
+
+`string text${expression} string text`;
+`this is specialstring ${1+2+3} `;
+
+let output = `the cost ${obj.cost} is ${obj.price} rupees`;
+
+escape characters --doesn't print 
+\n -- next line
+\t -- tab space
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Chapter-4 
+
+Arrays in JS
+-------------
+
+--collection of items (linear)
+
+array in indices
+
+arr[0],arr[1],arr[2],.......
+
+
+arrays are mutable  //strings are immutable
+
+
+------------------------------------------------------
+Looping over array
+--print all elements of an array
+
+array methods
+
+push() : add to end
+
+pop() : delete from end & return 
+
+toString() : converts array to string
+
+
+unshift()  : add to start -> push
+shift()  :delete from start & return ->pop
+
+slice() : returns apiece of the array   ---> slice(startIdx, endIdx)
+spice() : change original array (add ,remove, replace)  
+                                 ---> splice(startIdx,delCount,newEle)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
