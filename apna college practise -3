@@ -1,0 +1,130 @@
+//chapter 5 ----functions
+
+function myFunction(msg){
+    console.log(msg)
+}
+
+myFunction("im learning js");  
+
+function myFunction(x, y){
+    console.log(x+y);
+}
+myFunction(2, 4); 
+
+function sum(x, y){
+    s=x+y;
+    return s;
+}
+
+let val= sum(3,5);
+console.log(val);  *
+
+function sum(a,b){
+    return a+b;
+}
+
+const arrowSum =(a,b )=> {
+    console.log(a+b);
+}
+
+function mul(a, b){
+    return a*b;
+}
+
+const arrowMul =(a,b)=> {
+    return a*b;
+}  
+
+function countVowels(str){
+    let count = 0;
+    for (const char of str){
+        if(
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u" 
+        ) {
+        count ++;
+        }
+    }
+    return count;
+}
+
+const countVow = (str) => {
+     let count = 0;
+    for (const char of str){
+        if(
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u" 
+        ) {
+        count ++;
+        }
+    }
+    return count;
+
+}
+
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.forEach ((val) => {
+    console.log(val);
+});  
+
+let nums = [14, 25, 39, 48, 51, 63];
+
+nums.forEach(( num) => {
+    console.log(num * num);
+})  
+
+let arr = [ 1, 2, 3, 4, 5, 6, 7];
+
+let evenArr = arr.filter(( val ) =>{
+    return val % 2 === 0;
+});
+console.log(evenArr); 
+
+
+//qs
+
+let marks = [97, 64, 32, 49, 99, 96, 86];
+
+let toppers = marks.filter((val) => {
+    return val > 90;
+})
+console.log(toppers); 
+
+let n = prompt("enter a number : ");
+
+let arr = [];
+
+for (let i=1; i<= n; i++){
+    arr[i - 1] = i;
+}
+console.log(arr);
+
+let sum = arr.reduce((res, curr ) => {
+    return res + curr;
+})
+console.log(sum);
+
+let mul = arr.reduce((res, curr ) => {
+    return res * curr;
+})
+console.log(mul); 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+
+let h2 = document.querySelector("h2");
+
+console.dir(h2.innerText);
+
+h2.innerText = h2.innerText + " from the planet earth"; */
+
+let divs = document.querySelectorAll(".box");
+console.log(divs[0]);
