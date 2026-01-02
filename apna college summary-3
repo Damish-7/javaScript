@@ -1,0 +1,113 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+chapter-5
+
+FUNCTIONS
+---------------
+
+Block of code that performs a specific task, can be invoked whenever needed
+
+
+Function definition 
+
+function functionName() {
+//do some work
+}
+
+
+function call
+
+functionName();
+
+
+function functionName(param1 , param2,...){
+//do some work
+}
+
+---------------
+Arrow functions -compact way of writing a function
+
+const functionName = (param1,param2...)=>{
+//do some work
+}
+
+forEach loop in arrays
+-----------------------
+
+arr.forEach( callBackFunction )
+
+callbackFunction : here, it is a function to execute for each element for an array
+
+* A callback is a function passed as an argument to another function.
+
+arr.forEach (( val ) => {
+console.log(val);
+})
+
+//Higher order function
+
+--
+
+
+some more Array methods
+--------------------------
+
+Map - creates a new array with the results of some operation. the value its callback returns are used to form new array
+
+arr.map( callbackFnx (value, index, array ))
+
+
+let newArr = arr.map ((val) => {
+return val*2;
+})
+
+
+Filter -  creates a new array of elements that give true for a condition/filter.
+eg: all even elements
+
+let newArr = arr.filter ( (val) =>{
+return val % 2 === 0;
+})
+
+
+Reduce - performs some operations & reduces the array to a single value.I It retuns that single value.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+chapter-6
+
+DOM (part-1)
+-----------------------
+
+DOM manipulation-
+
+select with id --  document.getElementByid("myId")
+
+select with class -- document.getElementByClassName("myClass")
+
+select with tag -- document.getElementByTagName("p")
+
+
+
+Query selector 
+---------------
+
+document.querySelector("myId / myClass /tag )
+//returns first element
+
+document.querySelectorAll("myId / myClass /tag")
+//returns a Nodelist
+
+
+Properties :
+-------------
+
+tagName : returns tag for element nodes
+
+innerText : returns the text content of the element and all its children
+
+innerHTML : returns the plain text or HTML contents in the elements
+
+textContent : returns textual content even for hidden elements
+
+
