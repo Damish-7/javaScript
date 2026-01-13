@@ -1,0 +1,60 @@
+
+
+/*
+let arr = [5, 1, 4, 2, 8];                                //bubble sort
+
+for (let i = 0; i < arr.length; i++){
+    for(let j = 0;j < arr.length -1 -i; j++){
+
+        if (arr[j] > arr[j + 1]) {
+
+            let temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1]=temp ;
+        }  
+    }
+}
+console.log(arr);    
+
+
+
+let arr = [2, 4, 6, 8, 10, 12, 14];
+let target = 10;                                      //binary search
+
+let start = 0;
+let end= arr.length-1;
+
+while( start <= end){
+    let mid = Math.floor((start + end)/2);
+
+    if (arr[mid] === target){
+        console.log("element found at index:",mid);
+        break;
+    }
+    else if( arr[mid]<target){
+        start =mid+1;
+    }
+    else {
+        end= mid - 1;
+    }
+}                                        
+                            */
+
+
+let arr = [2, 4, 6, 8, 10, 12];
+let target = 10;                                  //linear search
+
+let found = false;
+
+for (let i=0; i< arr.length; i++){
+    if(arr[i] === target){
+        console.log("element found at index :", i);
+        found = true;
+        break;
+    }
+}
+if(!found){
+    console.log("element not found");
+}
+
+
